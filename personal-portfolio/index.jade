@@ -1,0 +1,56 @@
+//- HAMBURGER FOR NAVIGATION
+div.btn(onclick="site.toggleMenu()")
+  span.top
+  span.middle
+  span.bottom
+
+//- NAVIGATION MENU
+div#navigation
+  ul#menu
+    a(href="#home"): li(onclick="site.toggleMenu()") Home
+    a(href="#projects"): li(onclick="site.toggleMenu()") Projects
+    a(href="#contact"): li(onclick="site.toggleMenu()") Contact
+    
+#fullpage
+  // First Section. I.e. welcome screen
+  section.vertical-scrolling
+    div#main
+      // Image is styled to be framed in a circle
+      div#circle
+        img(src="http://benjamincook.io/images/me2.jpg")
+      div#right
+        h1 Benjamin Cook
+        p.big(style="text-align: justify") Hello world, I'm a software engineer in the San Francisco Bay Area. I like to use machine learning and artificial intelligence to solve challenging problems and impact the world for the better.
+        p.big: a(href="#contact") Get in touch
+  // Projects Section
+  section.vertical-scrolling
+    h1 My Projects
+    p.big Here are some of the projects I've been working on
+    table
+      tr
+        th Saasplate
+        td Boilerplate code for a SAAS app built with a microservice architecture.
+        td
+          a(href="https://github.com/cookbenjamin/saasplate" target="_blank") Code
+      tr
+        th PolyPy
+        td A library that automates polynomial regression analysis to find the ideal model with minimal effort.
+        td
+          a(href="https://github.com/cookbenjamin/polyPy" target="_blank") Code
+      tr
+        th This Website
+        td The website you are currently looking at. Built with Node.js.
+        td
+          a(href="https://github.com/cookbenjamin/helloWorld" targt="_blank") Code
+     p.big: a(href="https://github.com/cookbenjamin" target="_blank") View more projects 
+   section.vertical-scrolling
+     h1 Say Hello
+     p.big If you would like to find out more, don't be shy.<br />Feel free to call, email, or message me.
+     br
+     p.big: a(href="tel:+14242422981", target="_blank") 424.242.2981
+     br
+     p.big: a(href="mailto:hello@benjamincook.io", target="_blank") hello@benjamincook.io
+     br
+     a.social(href="https://angel.co/benjamincook", target="_blank"): img(src="http://benjamincook.io/images/angellist.png")
+     a.social(href="https://www.linkedin.com/in/benjamin-cook", target="_blank"): img(src="http://benjamincook.io/images/linkedin.png")
+     a.social(href="https://github.com/cookbenjamin", target="_blank"): img(src="http://benjamincook.io/images/github.png")

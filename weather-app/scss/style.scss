@@ -1,0 +1,42 @@
+body {
+  
+  text-align: center;
+  background: white;
+  font-family: "Roboto";
+  font-weight: 100;
+}
+body.clear {
+  background: skyblue;
+}
+body.cloudy, body.haze {
+  background: rgba(0,0,0,.1);
+}
+body.rain {
+  background: rgba(0,0,0,.9);
+  color: white;
+}
+h1 {
+  font-size: 120px;
+  font-weight: 100;
+}
+h3 {
+  font-size:  50px;
+  font-weight: 100;
+}
+button {
+  border: 0;
+  background: 0;
+  color: #0088ff;
+}
+i {
+  font-size: 200px;
+}
+@media screen and (min-height: 500px) {
+  #data {
+    height: 500px;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    margin-top: -250px;
+  }
+}

@@ -1,0 +1,32 @@
+#quoteBox {
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, .2);
+  width: 500px;
+  margin: 50px auto;
+  padding: 100px;
+}
+header {
+  padding: 50px;
+  text-align: center;
+}
+span {
+  display: block;
+  text-align: right;
+}
+#new {
+  float: right;
+  clear: both;
+}
+.buttonBox {
+  margin-top: 25px;
+}
+button {
+  border: 1px solid #0088ff;
+  background: none;
+  padding: 20px;
+  font-size: 1.3em;
+  color: #0088ff;
+}
+button:hover {
+  background: #0088ff;
+  color: #fff;
+}
